@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Test template</h1>
+    <p>My name is {{name}}</p>
+
+    <p>A loop here</p>
+    {% for number in some_list %}
+        <p>{{number}}</p>
+    {% endfor %}
+
+    <p>A loop in a dictionary</p>
+    {% for item in some_dictionary %}
+
+    {% if item.position == 'Software Engineer' %}
+    <div>
+        <p>Employee: {{item.name}}/ Position: {{item.position}}</p>
+    </div>
+    {% else %}
+    
+    <h1>WILL KILLYOUUUU!!!</h1>
+
+    {% endif %}
+        
+    {% endfor %}
+</body>
+</html>
