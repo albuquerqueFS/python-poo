@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>THIS IS INSIDE THE BLOCK IN EXAMPLE.HTML</h1>
+
+{% endblock %}
+
+{% comment %} <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +15,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Test template</h1>
+    <h1>Test template | <a href="{% url 'my_app:index' %}">Back to Index page</a> </h1>
     <p>My name is {{name}}</p>
 
     <p>A loop here</p>
@@ -30,4 +38,4 @@
         
     {% endfor %}
 </body>
-</html>
+</html> {% endcomment %}
